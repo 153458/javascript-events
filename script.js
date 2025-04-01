@@ -18,3 +18,11 @@ const focusInput = document.getElementById("focusInput");
 const focusMessage = document.getElementById("focusMessage");
 focusInput.addEventListener("focus", () => focusMessage.textContent = "Input is focused!");
 focusInput.addEventListener("blur", () => focusMessage.textContent = "Input lost focus!");
+
+const buttonContainer = document.getElementById("buttonContainer");
+const delegateMessage = document.getElementById("delegateMessage");
+buttonContainer.addEventListener("click", (event) => {
+    if (event.target.tagName === "BUTTON") {
+        delegateMessage.textContent = `You clicked: ${event.target.textContent}`;
+    }
+});
