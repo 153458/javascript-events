@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.button-container button {
+    margin: 5px;
+}
